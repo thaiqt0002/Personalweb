@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding:2em;
+    border-radius: 1em;
+}
+
+.input-area {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    margin: 0.5em;
+    width:auto;
+    padding:0.5em;
+}
