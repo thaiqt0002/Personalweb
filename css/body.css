@@ -1,0 +1,93 @@
+body {
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+}
+
+
+body::before {
+    content: '';
+    position:absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
+    background: url(../Pics/background.png) fixed;
+    background-size: cover;
+    opacity:85%;
+
+}
+
+.main-content {
+    display:flex;
+    justify-content: space-around;
+    padding: 0 1em 0 1em;
+    gap:2em;
+}
+
+
+.main-content .left-side {
+    display:flex;
+    flex-direction: column;
+    max-width:70em;
+    min-width:30em;
+    
+}
+
+.main-content .left-side .big-bubble {
+    
+    border-radius:1em;
+    box-shadow: 1em 1em 2em;
+}
+
+.main-content .left-side .bubble {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin:1em;
+    border-radius:1em;
+    padding: 1em;
+    border: solid 0.8em rgb(237, 147, 224);
+
+}
+
+/* .main-content .left-side .bubble:hover {
+    box-shadow: 0.5em -0.5em 3em white;
+} */
+.main-content .left-side .main-title h1 {
+    background-image: linear-gradient(to right, rgb(239, 136, 11), rgb(219, 12, 215) );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    zoom: 1.4;
+}
+
+.main-content .left-side .description {
+    text-align: center;
+}
+
+.main-content .right-side {
+    display:flex;
+    flex-direction: column;
+    max-width:23em;
+    min-width:22em;
+    margin-top:-1em;
+    gap:1em;
+}
+
+.main-content .right-side .bubble {
+    display:flex;
+    flex-direction: column;
+    border-radius: 1em;
+    border: solid 0.8em antiquewhite;
+    background-color: white;
+    padding:1em;
+    box-shadow: 1em 1em 2em;
+}
+.main-content .right-side .bubble1 p {
+    text-align: center;
+    zoom:1.3;
+    font-style: italic;
+}

@@ -1,0 +1,57 @@
+@import url(./header.css);
+@import url(./body.css);
+@import url(./footer.css);
+
+.page {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:200vh;
+}
+
+.page-top {
+    display:flex;
+    flex-direction: column;
+    gap:2em;
+}
+
+* {
+    position:relative
+}
+
+/* audio's area */
+audio { 
+    background-color: white;
+}
+audio::-webkit-media-controls-panel {
+    background-color:white;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #09a3f6;
+    font-weight:bold
+}
+audio::-webkit-media-controls-mute-button {
+    display:none
+}
+audio::-webkit-media-controls-timeline {
+    width:15em;
+}
+
+/* realtime's area */
+.display-date {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    zoom: 1.2;
+  }
+  
+.display-time {
+    display: flex;
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+  
