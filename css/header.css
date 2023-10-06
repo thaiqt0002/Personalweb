@@ -13,7 +13,11 @@ header {
     padding: 0 0.5em 0 0;
 }
 
-.headbar .left-corner, 
+.headbar .left-corner {
+    display:flex;
+    gap:1em;
+}
+
 .headbar .right-corner {
     display:flex;
     gap:1em;

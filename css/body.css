@@ -3,6 +3,8 @@ body {
     padding:0;
     display:flex;
     flex-direction: column;
+    min-width: 80em;
+    min-height:400vh;
 }
 
 
@@ -31,14 +33,9 @@ body::before {
     display:flex;
     flex-direction: column;
     max-width:70em;
-    min-width:30em;
+    min-width:60em;
+    gap:1em;
     
-}
-
-.main-content .left-side .big-bubble {
-    
-    border-radius:1em;
-    box-shadow: 1em 1em 2em;
 }
 
 .main-content .left-side .bubble {
@@ -47,17 +44,18 @@ body::before {
     justify-content: center;
     align-items: center;
     background-color: white;
-    margin:1em;
     border-radius:1em;
     padding: 1em;
     border: solid 0.8em rgb(237, 147, 224);
+    box-shadow: 1em 1em 2em;
 
 }
 
 /* .main-content .left-side .bubble:hover {
     box-shadow: 0.5em -0.5em 3em white;
 } */
-.main-content .left-side .main-title h1 {
+.main-content .left-side .title h1 {
+    text-align: center;
     background-image: linear-gradient(to right, rgb(239, 136, 11), rgb(219, 12, 215) );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -68,6 +66,10 @@ body::before {
     text-align: center;
 }
 
+.main-content .left-side .bubble3 table .subject {
+    padding:10px;
+    background-color: white;
+}
 .main-content .right-side {
     display:flex;
     flex-direction: column;

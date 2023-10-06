@@ -3,10 +3,7 @@
 @import url(./footer.css);
 
 .page {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height:200vh;
+    
 }
 
 .page-top {
@@ -41,7 +38,7 @@ audio::-webkit-media-controls-timeline {
 
 /* realtime's area */
 .display-date {
-    text-align: center;
+    text-align:center;
     margin-bottom: 10px;
     font-size: 1.6rem;
     font-weight: 600;
@@ -54,4 +51,3 @@ audio::-webkit-media-controls-timeline {
     font-weight: bold;
     padding: 10px 20px;
 }
-  
