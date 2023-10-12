@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="icon" type="image/x-icon" href="/Pics/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./Static/favicon.png">
     <title>Document</title>
     
 </head>
@@ -17,7 +17,7 @@
         <div class="left-corner">
             <div class="avatar">
                 <a href="/Personal-web">
-                    <img src="./Pics/avatar.png" alt="avatar"/>
+                    <img src="./Static/avatar.png" alt="avatar"/>
                 </a>
             </div>
             <div class="button">button</div>
@@ -38,7 +38,7 @@
     <div class="main-content">
         <div class="left-side">
             <div class="bubble bubble1">
-                <div class = 'title'><h1>WELCOME TO FU'S AREA!!!</h1></div>
+                <div class = 'title'><h1>FU'S AREA</h1></div>
                 <div class="time-container">
                     <div class="display-date">
                         <span id="day">day</span>,
@@ -49,16 +49,77 @@
                     <div class="display-time"></div>
                     </div>
             </div>
-
+            
             <div class="bubble bubble2">
                 <div class="title"><h1>DAILY CHECKLIST</h1></div>
-                
+                <form class="checkbox-area" method="POST" action="./index.html">
+                    <table border="5" cellspacing="0" style="text-align: center;">
+                        <tr>
+                            <td width="150" height="50">
+                                <div class="right" style="transform: translateY(-0px) translateX(45px);"><b>Criterias</b></div>
+                                <div class="left" style="transform: translateY(-0px) translateX(-50px);"><b>Tasks</b></div>
+                                <div class="line" style="transform: translateY(-18px) translateX(1px) rotate(16deg); border-bottom:solid 1px; width: 10em;"></div>
+                            </td>
+                            <td width="100" height="50">Completed</td>
+                            <td width="100" height="50">Incompleted</td>
+                            <td width="100" height="50">No Need</td>
+                            <td width="200" height="50">Note</td>
+                        </tr>
+                        <tr>
+                            <td height="50">A</td>
+                            <td height="50"><input type="radio" name="a" /></td>
+                            <td height="50"><input type="radio" name="a" /></td>
+                            <td height="50"><input type="radio" name="a" /></td>
+                            <td height="50"></td>
+                        </tr>
+                        <tr>
+                            <td height="50">B</td>
+                            <td height="50"><input type="radio" name="b" /></td>
+                            <td height="50"><input type="radio" name="b" /></td>
+                            <td height="50"><input type="radio" name="b" /></td>
+                            <td height="50"></td>
+                        </tr>
+                        <tr>
+                            <td height="50">C</td>
+                            <td height="50"><input type="radio" name="c" /></td>
+                            <td height="50"><input type="radio" name="c" /></td>
+                            <td height="50"><input type="radio" name="c" /></td>
+                            <td height="50"></td>
+                        </tr>
+                        <tr>
+                            <td height="50">D</td>
+                            <td height="50"><input type="radio" name="d" /></td>
+                            <td height="50"><input type="radio" name="d" /></td>
+                            <td height="50"><input type="radio" name="d" /></td>
+                            <td height="50"></td>
+                        </tr>
+                        <tr>
+                            <td height="50">D</td>
+                            <td height="50"><input type="radio" name="e" /></td>
+                            <td height="50"><input type="radio" name="e" /></td>
+                            <td height="50"><input type="radio" name="e" /></td>
+                            <td height="50"></td>
+                        </tr>
+                    </table>
+                    <div class="confirm-area">
+                        <div class="note" style="font-style: italic;">  
+                            <ol><b>Extra note:</b>
+                                <li>Complete: ....</li>
+                                <li>Incomplete:...</li>
+                                <li>No need: ...</li>
+                            </ol>
+                        </div>
+                        <div id="demo" class="button-bubble" onclick="myFunction()">
+                            <input type="submit" value="submit"/>
+                        </div>
+                    </div>
+                </form>
             </div>
-
+            
             <div class="bubble bubble3">
                 <div class=title><h1>TIME TABLE</h1></div>
                 <table border="5" cellspacing="0" align="center">
-                    <!--<caption>Timetable</caption>-->
+                    <caption>Timetable</caption>
                     <tr style="background-color: #f3eeee;">
                         <td align="center" height="50" width="100" colspan="2"><br>
                             <div class="right" style="transform: translateY(-5px) translateX(50px);"><b>Thứ</b></div>
@@ -233,24 +294,28 @@
                 </table>
             </div>
 
-            
-
             <div class="bubble bubble4">
-                <div class = "abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae laborum dolore, voluptates quo sed molestias. Alias perspiciatis eum perferendis iste hic dicta cupiditate distinctio nostrum obcaecati. Quisquam, hic saepe.</div>
-                <div class = "abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae laborum dolore, voluptates quo sed molestias. Alias perspiciatis eum perferendis iste hic dicta cupiditate distinctio nostrum obcaecati. Quisquam, hic saepe.</div>
-                <div class = "abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae laborum dolore, voluptates quo sed molestias. Alias perspiciatis eum perferendis iste hic dicta cupiditate distinctio nostrum obcaecati. Quisquam, hic saepe.</div>
+                <div>
+                    <button type="button" onclick="myFunction(), window.print()">Try it</button>
+                </div>
             </div>
         </div>
+        
     
         <div class="right-side">
             <div class="bubble bubble1">
                 <p>Violet Snow - Yuuki Aira:</p>                    
                 <audio controls>
-                    <source src="./Violet Snow.mp3" type="audio/mpeg"> 
+                    <source src="./Static/Violet Snow.mp3" type="audio/mpeg"> 
                 </audio>
             </div>
-            <div class="bubble bubble2">
-                <iframe width="100%" src="https://www.youtube.com/embed/aoluUL5DQ24" title="Yoshino Nanjo - 閃 -Sen- (Audio)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <div class='bubble bubble2'>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
             </div>
             <div class="bubble bubble3">
                 <div class = "abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae laborum dolore, voluptates quo sed molestias. Alias perspiciatis eum perferendis iste hic dicta cupiditate distinctio nostrum obcaecati. Quisquam, hic saepe.</div>
@@ -264,12 +329,16 @@
                 <div class = "abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae laborum dolore, voluptates quo sed molestias. Alias perspiciatis eum perferendis iste hic dicta cupiditate distinctio nostrum obcaecati. Quisquam, hic saepe.</div>
             </div>
         </div>
+        
+        <script src="./nodejs/realtime.js"></script>
+        <script src="./nodejs/index.js"></script>
     </div>
-    <script src="./realtime.js"></script>
 </body>
 </div>
+
 <footer>
     Lorem
 </footer>
 </div>
+    
 </html>
