@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <h1>CHƯƠNG TRÌNH THIẾT KẾ ĐỒ HỌA</h1>
+        <table border="4">
+            <tr style="background-color: rgb(0, 255, 68); color:white; font-weight: bold;">
+                <td width="50" height=50 rowspan="2">STT</td>
+                <td width="250" rowspan="2">TÊN MÔN HỌC</td>
+                <td width="170" colspan="2">SỐ TIẾT</td>
+            </tr>
+            <tr style="background-color: rgb(0, 255, 68); color:white; font-weight: bold;">
+                <td height="25">Lý Thuyết</td>
+                <td>Thực hành</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="subjectname">Thiết kế mẫu với CorelDraw</td>
+                <td>30</td>
+                <td>60</td>
+            </tr>
+            <tr style="background:aqua;">
+                <td>2</td>
+                <td class="subjectname">Thiết kế mẫu với Illustrator</td>
+                <td>30</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>3</td>                
+                <td class="subjectname">Xử lý ảnh với Photoshop</td>
+                <td>30</td>
+                <td>60</td>
+            </tr>
+            <tr style="background:aqua;">
+                <td>4</td>
+                <td class="subjectname">Mỹ thuật ứng dụng</td>
+                <td>30</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="subjectname">Nghệ thuật chữ</td>
+                <td>30</td>
+                <td>30</td>
+            </tr>
+            <tr style="background:aqua;">
+                <td>6</td>         
+                <td class="subjectname">Layout web</td>
+                <td>30</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="subjectname">Thiết kế bộ nhận diện thương hiệu</td>
+                <td>30</td>
+                <td>60</td>
+            </tr>
+            <tr style="background:orange;">
+                <td>8</td>
+                <td class="subjectname">Khóa luận tốt nghiệp</td>
+                <td></td>
+                <td>150</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<style>
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background:url(images/1.jpg) top left / auto fixed repeat-x, url(images/2.jpg) bottom left / auto no-repeat;
+    min-height:80vh;
+}
+h1 {
+    padding:2em;
+    color:rgb(0, 255, 68);
+    padding-bottom: 1em;
+}
+
+table {
+    text-align: center;
+    border: solid 4px rgb(0, 255, 68);
+}
+
+tr {
+    height:30px;
+}
+.subjectname {
+    text-align: left;
+}
+</style>
+</html>

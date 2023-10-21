@@ -1,4 +1,6 @@
 const displayTime = document.querySelector(".display-time");
+
+const displayID = document.querySelector('#id');
 // Time
 function showTime() {
   let time = new Date();
@@ -14,9 +16,11 @@ function updateDate() {
 
   // return number
   let dayName = today.getDay(),
-    dayNum = today.getDate(),
-    month = today.getMonth(),
-    year = today.getFullYear();
+      dayNum = today.getDate(),
+      month = today.getMonth(),
+      year = today.getFullYear();
+
+  document.getElementById('id').innerText = dayNum.toString() + (month+1).toString() + year.toString();
 
   const months = [
     "January",
@@ -49,5 +53,6 @@ function updateDate() {
     document.getElementById(IDCollection[i]).firstChild.nodeValue = val[i];
   }
 }
+
 
 updateDate();

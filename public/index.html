@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" type="image/x-icon" href="./Static/favicon.png">
     <title>Document</title>
-    <script type='module' src="./index.js"></script>
+    <script type='module' src="./js/index.js"></script>
 </head>
 
 
@@ -20,7 +20,7 @@
                     <img src="./Static/avatar.png" alt="avatar"/>
                 </a>
             </div>
-            <div class="button">button</div>
+            <div class="button"><a href='IE104/index.html' style="color:white; text-decoration: none;">IE104</a></div>
             <div class="button">button</div>
             <div class="button">button</div>
             <div class="button">button</div>
@@ -52,7 +52,6 @@
             
             <div class="bubble bubble2">
                 <div class="title"><h1>DAILY CHECKLIST</h1></div>
-                <form class="checkbox-area" method="POST" action="./index.html">
                     <table border="5" cellspacing="0" style="text-align: center;">
                         <tr>
                             <td width="150" height="50">
@@ -66,66 +65,57 @@
                             <td width="200" height="50">Note</td>
                         </tr>
                         <tr>
+                            <td height="50">ID</td>
+                            <td height="50" colspan="4"><div id="id">0000</div></td>
+                        </tr>
+                        <tr>
                             <td height="50">A</td>
-                            <td height="50"><input type="radio" name="a" /></td>
-                            <td height="50"><input type="radio" name="a" /></td>
-                            <td height="50"><input type="radio" name="a" /></td>
+                            <td height="50"><input type="radio" class='a' name="a" /></td>
+                            <td height="50"><input type="radio" class='a' name="a" /></td>
+                            <td height="50"><input type="radio" class='a' name="a" /></td>
                             <td height="50"></td>
                         </tr>
                         <tr>
                             <td height="50">B</td>
-                            <td height="50"><input type="radio" name="b" /></td>
-                            <td height="50"><input type="radio" name="b" /></td>
-                            <td height="50"><input type="radio" name="b" /></td>
+                            <td height="50"><input type="radio" class='b' name="b" /></td>
+                            <td height="50"><input type="radio" class='b' name="b" /></td>
+                            <td height="50"><input type="radio" class='b' name="b" /></td>
                             <td height="50"></td>
                         </tr>
                         <tr>
                             <td height="50">C</td>
-                            <td height="50"><input type="radio" name="c" /></td>
-                            <td height="50"><input type="radio" name="c" /></td>
-                            <td height="50"><input type="radio" name="c" /></td>
+                            <td height="50"><input type="radio" class='c' name="c" /></td>
+                            <td height="50"><input type="radio" class='c' name="c" /></td>
+                            <td height="50"><input type="radio" class='c' name="c" /></td>
                             <td height="50"></td>
                         </tr>
                         <tr>
                             <td height="50">D</td>
-                            <td height="50"><input type="radio" name="d" /></td>
-                            <td height="50"><input type="radio" name="d" /></td>
-                            <td height="50"><input type="radio" name="d" /></td>
+                            <td height="50"><input type="radio" class='d' name="d" /></td>
+                            <td height="50"><input type="radio" class='d' name="d" /></td>
+                            <td height="50"><input type="radio" class='d' name="d" /></td>
                             <td height="50"></td>
                         </tr>
                         <tr>
                             <td height="50">E</td>
-                            <td height="50"><input type="radio" name="e" /></td>
-                            <td height="50"><input type="radio" name="e" /></td>
-                            <td height="50"><input type="radio" name="e" /></td>
+                            <td height="50"><input type="radio" class='e' name="e" /></td>
+                            <td height="50"><input type="radio" class='e' name="e" /></td>
+                            <td height="50"><input type="radio" class='e' name="e" /></td>
                             <td height="50"></td>
                         </tr>
                         <tr>
                             <td height="50">F</td>
-                            <td height="50"><input type="radio" name="e" /></td>
-                            <td height="50"><input type="radio" name="e" /></td>
-                            <td height="50"><input type="radio" name="e" /></td>
+                            <td height="50"><input type="radio" class='f' name="f" /></td>
+                            <td height="50"><input type="radio" class='f' name="f" /></td>
+                            <td height="50"><input type="radio" class='f' name="f" /></td>
                             <td height="50"></td>
+                        </tr>
                         </tr>
                         <tr>
                             <td height="50">G</td>
-                            <td height="50"><input type="radio" name="e" /></td>
-                            <td height="50"><input type="radio" name="e" /></td>
-                            <td height="50"><input type="radio" name="e" /></td>
-                            <td height="50"></td>
-                        </tr>
-                        <tr>
-                            <td height="50">H</td>
-                            <td height="50"><input type="radio" name="e" /></td>
-                            <td height="50"><input type="radio" name="e" /></td>
-                            <td height="50"><input type="radio" name="e" /></td>
-                            <td height="50"></td>
-                        </tr>
-                        <tr>
-                            <td height="50">I</td>
-                            <td height="50"><input type="radio" name="e" /></td>
-                            <td height="50"><input type="radio" name="e" /></td>
-                            <td height="50"><input type="radio" name="e" /></td>
+                            <td height="50"><input type="radio" class='g' name="g" /></td>
+                            <td height="50"><input type="radio" class='g' name="g" /></td>
+                            <td height="50"><input type="radio" class='g' name="g" /></td>
                             <td height="50"></td>
                         </tr>
                     </table>
@@ -137,17 +127,29 @@
                                 <li>No need: ...</li>
                             </ol>
                         </div>
-                        <div id="demo" class="button-bubble" onclick="myFunction()">
-                            <input type="submit" value="submit"/>
+                        <div class="button-bubble">
+                            <button id='InsertData'>Insert</button>
+                        </div>
+                        <div class="button-bubble">
+                            <input id='UpdateData' type="submit" value="update"/>
+                        </div>
+                        <div class="button-bubble">
+                            <input id='RemoveData' type="submit" value="remove"/>
                         </div>
                     </div>
-                </form>
+                <div class="findID">
+                    <b>Find ID:</b>
+                    <h4>ID</h4>
+                    <input id="findID" type="text"><br>
+                    <button id="find">FIND</button>
+                    <h3 id="findName" type="text"></h3>
+                    <h3 id="findAge" type="text"></h3>
+                </div>
             </div>
             
             <div class="bubble bubble3">
                 <div class=title><h1>TIME TABLE</h1></div>
                 <table border="5" cellspacing="0" align="center">
-                    <caption>Timetable</caption>
                     <tr style="background-color: #f3eeee;">
                         <td align="center" height="50" width="100" colspan="2"><br>
                             <div class="right" style="transform: translateY(-5px) translateX(50px);"><b>Thứ</b></div>
@@ -333,11 +335,10 @@
         <div class="right-side">
             <div class="bubble bubble1">
                 <p>Violet Snow - Yuuki Aira:</p>                    
-                <audio controls>
+                <audio controls muted>
                     <source src="./Static/Violet Snow.mp3" type="audio/mpeg"> 
                 </audio>
             </div>
-
             <div class='bubble bubble2'>
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="fname" value="John"><br>
